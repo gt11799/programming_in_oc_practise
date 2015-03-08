@@ -20,6 +20,8 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"The area of retangle: %i",[myRect area]);
         NSLog(@"Origin at (%i, %i)", myRect.origin.x, myRect.origin.y);
+        [myPoint setX:50 andY:180];
+        NSLog(@"Now Origin at (%i, %i)",myRect.origin.x, myRect.origin.y);
     }
     return 0;
 }

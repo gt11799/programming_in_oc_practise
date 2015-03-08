@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "XYPoint.h"
 
-@class XYPoint;
 @interface Rectangle : NSObject
 
 @property int width, height;
