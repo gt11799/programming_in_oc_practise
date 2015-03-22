@@ -17,24 +17,28 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        void exchange (int *pint1, int *pint2);
-        int i1 = -5, i2 = 34, *p1 = &i1, *p2 = &i2;
+        int arraySum (int array[], int n);
+        int values[10] = {3, 5, 89, -98, 48, 98, 43, 23};
         
-        NSLog(@"i1 = %i, i2 = %i", i1, i2);
-        exchange(p1, p2);
-        NSLog(@"i1 = %i, i2 = %i", i1, i2);
-        
-        exchange(&i1, &i2);
-        NSLog(@"i1 = %i, i2 = %i", i1, i2);
+        NSLog(@"The Sum is %i", arraySum(values, 7));
     }
+    
+    if (argc != 2){
+        NSLog(@"No word typed on the command");
+        return 1;
+    }
+    
     return 0;
 }
 
-void exchange (int *pint1, int *pint2)
+int arraySum (int array[],int n)
 {
-    int temp;
+    int sum = 0, *ptr;
+    int *arrayEnd = array + n;
     
-    temp = *pint1;
-    *pint1 = *pint2;
-    *pint2 = temp;
+    for (ptr = array; ptr < arrayEnd; ++ptr){
+        NSLog(@"%i", *ptr);
+        sum += *ptr;
+    }
+    return sum;
 }
