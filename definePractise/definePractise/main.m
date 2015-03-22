@@ -17,33 +17,24 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        char word[] = {'H', 'e', 'i', 'p','!','\0', '8'};
-        int i;
-        for (i = 0; i < 6; ++i) {
-            NSLog(@"%c",word[i]);
-        }
-        NSLog(@"%s",word);
-        NSLog(@"Hello, World!");
+        void exchange (int *pint1, int *pint2);
+        int i1 = -5, i2 = 34, *p1 = &i1, *p2 = &i2;
         
-        void (^print_message)(void) =
-        ^(void) {
-            NSLog(@"print this message");
-        };
-        print_message();
+        NSLog(@"i1 = %i, i2 = %i", i1, i2);
+        exchange(p1, p2);
+        NSLog(@"i1 = %i, i2 = %i", i1, i2);
         
-        struct date
-        {
-            int month;
-            int day;
-            int year;
-        };
-        
-        struct date today;
-        today.month = 3;
-        today.day = 25;
-        today.year = 2015;
-        
-        NSLog(@"Today'date is %i/%i/%.2i.", today.month, today.day, today.year % 100);
+        exchange(&i1, &i2);
+        NSLog(@"i1 = %i, i2 = %i", i1, i2);
     }
     return 0;
+}
+
+void exchange (int *pint1, int *pint2)
+{
+    int temp;
+    
+    temp = *pint1;
+    *pint1 = *pint2;
+    *pint2 = temp;
 }
