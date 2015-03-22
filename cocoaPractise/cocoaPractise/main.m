@@ -10,34 +10,28 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSNumber *myNumber, *floatNumber, *intNumber;
-        NSInteger myInt;
+        NSString *str1 = @"This is a string A";
+        NSString *str2 = @"This is a string B";
+        NSString *res;
+        NSRange subRange;
         
-        intNumber = [NSNumber numberWithInteger: 100];
-        myInt = [intNumber integerValue];
-        NSLog(@"%li", (long)myInt );
+        res = [str1 substringToIndex: 3];
+        NSLog(@"First 3 chars of str1: %@", res);
         
-        myNumber = [NSNumber numberWithLong: 0xabcdef];
-        NSLog(@"%lx", [myNumber longValue]);
+        res = [str1 substringFromIndex: 5];
+        NSLog(@"chars from index 5 of str1: %@",res);
         
-        myNumber = [NSNumber numberWithChar: 'X'];
-        NSLog(@"%c", [myNumber charValue]);
+        res = [[str1 substringFromIndex: 8] substringToIndex: 6];
+        NSLog(@"chars from index 8 through 13: %@",res);
         
-        floatNumber = [NSNumber numberWithFloat: 100.00];
-        NSLog(@"%g", [floatNumber floatValue]);
+        subRange = [str1 rangeOfString: @"string A"];
+        NSLog(@"String is at index %lu, length is %lu", subRange.location, subRange.length);
         
-        myNumber = [NSNumber numberWithDouble: 12345e+15];
-        NSLog(@"%lg", [myNumber doubleValue]);
-        
-       // NSLog(@"%lg", [myNumber integerValue]);
-        
-        if ([intNumber isEqualToNumber: floatNumber] == YES)
-            NSLog(@"Numbers are Equal");
+        subRange = [str1 rangeOfString: @"String B"];
+        if (subRange.location == NSNotFound)
+            NSLog(@"string is not found");
         else
-            NSLog(@"Numbers are not equal");
-        
-        if ([intNumber compare: myNumber] == NSOrderedAscending)
-            NSLog(@"First number is less than second");
+            NSLog(@"string is at index %lu, length is %lu", subRange.location, subRange.length);
     }
     return 0;
 }
