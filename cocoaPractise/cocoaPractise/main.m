@@ -10,28 +10,64 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSString *str1 = @"This is a string A";
-        NSString *str2 = @"This is a string B";
-        NSString *res;
-        NSRange subRange;
+        NSString *str1 = @"This is string A";
+        NSString *search, *replace;
+        NSMutableString *mstr;
+        NSRange substr;
         
-        res = [str1 substringToIndex: 3];
-        NSLog(@"First 3 chars of str1: %@", res);
+        mstr = [NSMutableString stringWithString: str1];
+        NSLog(@"%@",mstr);
         
-        res = [str1 substringFromIndex: 5];
-        NSLog(@"chars from index 5 of str1: %@",res);
+        [mstr insertString:@" mutable" atIndex: 7];
+        NSLog(@"%@", mstr);
         
-        res = [[str1 substringFromIndex: 8] substringToIndex: 6];
-        NSLog(@"chars from index 8 through 13: %@",res);
+        [mstr insertString: @" and string B" atIndex: [mstr length]];
+        NSLog(@"%@", mstr);
         
-        subRange = [str1 rangeOfString: @"string A"];
-        NSLog(@"String is at index %lu, length is %lu", subRange.location, subRange.length);
+        [mstr appendString: @" and string C"];
+        NSLog(@"%@", mstr);
         
-        subRange = [str1 rangeOfString: @"String B"];
-        if (subRange.location == NSNotFound)
-            NSLog(@"string is not found");
-        else
-            NSLog(@"string is at index %lu, length is %lu", subRange.location, subRange.length);
+        [mstr deleteCharactersInRange: NSMakeRange(16, 13)];
+        NSLog(@"%@", mstr);
+        
+        substr = [mstr rangeOfString: @"string B and "];
+        
+        if (substr.location != NSNotFound) {
+            [mstr deleteCharactersInRange: substr];
+            NSLog(@"%@", mstr);
+        }
+        
+        NSLog(@"******************");
+        
+        [mstr setString: @"This is string A"];
+        NSLog(@"%@", mstr);
+        
+        [mstr replaceCharactersInRange: NSMakeRange(8, 8) withString: @"a mutable string"];
+        NSLog(@"%@", mstr);
+        
+        search = @"This is";
+        replace = @"An example of";
+        
+        substr = [mstr rangeOfString: search];
+        
+        if (substr.location != NSNotFound) {
+            [mstr replaceCharactersInRange: substr withString: replace];
+        }
+        NSLog(@"%@", mstr);
+        
+        search = @"a";
+        replace = @"X";
+        
+        substr = [mstr rangeOfString: search];
+        
+        //NSLog(@"%@", substr);
+        
+        while (substr.location != NSNotFound) {
+            [mstr replaceCharactersInRange: substr withString: replace];
+            substr = [mstr rangeOfString: search];
+        }
+        
+        NSLog(@"%@", mstr);
     }
     return 0;
 }
