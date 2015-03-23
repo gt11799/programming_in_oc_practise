@@ -9,30 +9,8 @@
 #import "AddressCard.h"
 
 @implementation AddressCard
-{
-    NSString *name;
-    NSString *email;
-}
 
--(void) setName:(NSString *)theName
-{
-    name = [NSString stringWithString: theName];
-}
-
--(void) setEmail:(NSString *)theEmail
-{
-    email = [NSString stringWithString: theEmail];
-}
-
--(NSString *) name
-{
-    return name;
-}
-
--(NSString *) email
-{
-    return email;
-}
+@synthesize name, email;
 
 -(void) print
 {

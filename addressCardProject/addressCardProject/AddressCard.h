@@ -10,10 +10,7 @@
 
 @interface AddressCard : NSObject
 
--(void) setName: (NSString *) theName;
--(void) setEmail: (NSString *) theEmail;
--(NSString *) name;
--(NSString *) email;
+@property (copy, nonatomic) NSString *name, *email;
 
 -(void) print;
 
