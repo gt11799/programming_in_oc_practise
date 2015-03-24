@@ -18,5 +18,7 @@
 -(void) addCard: (AddressCard *) theCard;
 -(int) entries;
 -(void) list;
+-(AddressCard *) lookup: (NSString *) theName;
+
 
 @end

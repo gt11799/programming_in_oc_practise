@@ -18,6 +18,8 @@ int main(int argc, const char * argv[]) {
         NSString *cName = @"tuii";
         NSString *cEmail = @"tuyun@xiaoher.com";
         
+        AddressCard *myCard;
+        
         AddressCard *card1 = [[AddressCard alloc] init];
         AddressCard *card2 = [[AddressCard alloc] init];
         AddressCard *card3 = [[AddressCard alloc] init];
@@ -35,6 +37,9 @@ int main(int argc, const char * argv[]) {
         [myBook addCard: card3];
         
         [myBook list];
+        
+        myCard = [myBook lookup: @"tuii"];
+        [myCard print];
     }
     return 0;
 }

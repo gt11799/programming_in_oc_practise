@@ -35,7 +35,7 @@
 
 -(int) entries
 {
-    return [book count];
+    return (int)[book count];
 }
 
 -(void) list
@@ -45,6 +45,16 @@
         NSLog(@"%-20s    %-32s", [theCard.name UTF8String], [theCard.email UTF8String]);
     }
     NSLog(@"===================================");
+}
+
+-(AddressCard *) lookup:(NSString *)theName
+{
+    for (AddressCard *nextCard in book){
+        if ([nextCard.name caseInsensitiveCompare: theName] == NSOrderedSame)
+            return nextCard;
+    }
+    return nil;
+
 }
 
 @end
