@@ -13,9 +13,9 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSString *aName = @"Julia Kochan";
         NSString *aEmail = @"gting405@163.com";
-        NSString *bName = @"gongong";
+        NSString *bName = @"Gongong";
         NSString *bEmail = @"gii@xiaoher.com";
-        NSString *cName = @"tuii";
+        NSString *cName = @"Tuii";
         NSString *cEmail = @"tuyun@xiaoher.com";
         
         AddressCard *myCard;
@@ -36,10 +36,23 @@ int main(int argc, const char * argv[]) {
         [myBook addCard: card2];
         [myBook addCard: card3];
         
-        [myBook list];
+        //[myBook list];
         
         myCard = [myBook lookup: @"tuii"];
-        [myCard print];
+        // [myCard print];
+        
+        NSLog(@"Lookup: tuii");
+        myCard = [myBook lookup:@"tuii"];
+        
+        if (myCard != nil)
+            [myCard print];
+        else
+            NSLog(@"Not Found");
+        
+        //[myBook removeCard: myCard];
+        [myBook sort];
+        [myBook list];
+        
     }
     return 0;
 }

@@ -33,6 +33,11 @@
     [book addObject: theCard];
 }
 
+-(void) removeCard:(AddressCard *)theCard
+{
+    [book removeObjectIdenticalTo: theCard];
+}
+
 -(int) entries
 {
     return (int)[book count];
@@ -55,6 +60,11 @@
     }
     return nil;
 
+}
+
+-(void) sort
+{
+    [book sortUsingSelector: @selector(compareNames:)];
 }
 
 @end
