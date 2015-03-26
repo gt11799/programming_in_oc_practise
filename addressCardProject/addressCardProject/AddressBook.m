@@ -54,12 +54,19 @@
 
 -(AddressCard *) lookup:(NSString *)theName
 {
-    for (AddressCard *nextCard in book){
-        if ([nextCard.name caseInsensitiveCompare: theName] == NSOrderedSame)
-            return nextCard;
-    }
-    return nil;
-
+    NSUInteger result = [book indexOfObjectPassingTest: ^(id obj, NSUInteger idx, BOOL *stop)
+                         {
+                             if ([[obj name] caseInsensitiveCompare:theName] == NSOrderedSame) {
+                                 *stop = YES;
+                                 return YES;
+                             }
+                             else
+                                 return NO;
+                         }];
+    if (result != NSNotFound)
+        return book[result];
+    else
+        return nil;
 }
 
 -(void) sort
