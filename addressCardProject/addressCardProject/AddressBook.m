@@ -69,6 +69,29 @@
         return nil;
 }
 
+-(NSMutableArray *) lookupAll:(NSString *)theName
+{
+    NSMutableArray *matches = [NSMutableArray array];
+    
+    NSUInteger result = [book indexOfObjectPassingTest: ^(id obj, NSUInteger idx, BOOL *stop)
+                         {
+                             if ([[obj name] caseInsensitiveCompare:theName] == NSOrderedSame) {
+                                 [matches addObject:obj];
+                                 return YES;
+                             }
+                             else
+                                 return NO;
+                         }];
+    if ([matches count])
+        return matches;
+    else
+        return nil;
+    
+    //return result;  //return the index
+}
+
+
+
 -(void) sort
 {
     [book sortUsingSelector: @selector(compareNames:)];
