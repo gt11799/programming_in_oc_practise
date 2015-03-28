@@ -12,7 +12,20 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *display;
 
--(IBAction) click1;
+-(void) processDigit:(int) digit;
+-(void) processOp: (char) theOp;
+-(void) storeFracpart;
+
+-(IBAction)clickDigit:(UIButton *)sender;
+
+-(IBAction)clickPlus;
+-(IBAction)clickMinus;
+-(IBAction)clickMutiply;
+-(IBAction)clickDivide;
+
+-(IBAction)clickOver;
+-(IBAction)clickEquals;
+-(IBAction)clickClear;
 
 @end
 

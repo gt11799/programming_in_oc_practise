@@ -15,6 +15,7 @@
 		32802C411AC4DB7B009FEDC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32802C401AC4DB7B009FEDC4 /* Images.xcassets */; };
 		32802C441AC4DB7B009FEDC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32802C421AC4DB7B009FEDC4 /* LaunchScreen.xib */; };
 		32802C501AC4DB7B009FEDC4 /* iPhonePractiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32802C4F1AC4DB7B009FEDC4 /* iPhonePractiseTests.m */; };
+		32802C5B1AC62C1C009FEDC4 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 32802C5A1AC62C1C009FEDC4 /* Fraction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		32802C491AC4DB7B009FEDC4 /* iPhonePractiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPhonePractiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32802C4E1AC4DB7B009FEDC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32802C4F1AC4DB7B009FEDC4 /* iPhonePractiseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPhonePractiseTests.m; sourceTree = "<group>"; };
+		32802C591AC62C1C009FEDC4 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		32802C5A1AC62C1C009FEDC4 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				32802C341AC4DB7B009FEDC4 /* AppDelegate.h */,
 				32802C351AC4DB7B009FEDC4 /* AppDelegate.m */,
 				32802C3A1AC4DB7B009FEDC4 /* ViewController.h */,
+				32802C591AC62C1C009FEDC4 /* Fraction.h */,
+				32802C5A1AC62C1C009FEDC4 /* Fraction.m */,
 				32802C3B1AC4DB7B009FEDC4 /* ViewController.m */,
 				32802C3D1AC4DB7B009FEDC4 /* Main.storyboard */,
 				32802C401AC4DB7B009FEDC4 /* Images.xcassets */,
@@ -226,6 +231,7 @@
 				32802C361AC4DB7B009FEDC4 /* AppDelegate.m in Sources */,
 				32802C3C1AC4DB7B009FEDC4 /* ViewController.m in Sources */,
 				32802C331AC4DB7B009FEDC4 /* main.m in Sources */,
+				32802C5B1AC62C1C009FEDC4 /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

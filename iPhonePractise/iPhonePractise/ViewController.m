@@ -13,6 +13,13 @@
 @end
 
 @implementation ViewController
+{
+    char op;
+    int  currentNumber;
+    BOOL firstOperator, isNumberator;
+    //Calculator  *myCalculator;
+    NSMutableString *displayString;
+}
 
 @synthesize display;
 
