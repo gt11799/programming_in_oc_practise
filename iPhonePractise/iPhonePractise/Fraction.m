@@ -105,7 +105,7 @@
         u = v;
         v = temp;
     }
-    NSLog(@"%i, %i", u,v);
+    
     numerator /= u;
     denominator /= u;
 }
