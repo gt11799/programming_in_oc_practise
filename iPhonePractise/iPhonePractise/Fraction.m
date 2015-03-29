@@ -93,6 +93,8 @@
     int v = denominator;
     int temp;
     
+    
+    
     if (u == 0)
         return;
     else if (u < 0)
@@ -103,9 +105,9 @@
         u = v;
         v = temp;
     }
-    
+    NSLog(@"%i, %i", u,v);
     numerator /= u;
-    denominator /= v;
+    denominator /= u;
 }
 
 @end
