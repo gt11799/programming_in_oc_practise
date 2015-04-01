@@ -98,6 +98,7 @@
                     <connections>
                         <outlet property="body" destination="lvL-TY-laT" id="n45-j8-0mN"/>
                         <outlet property="headline" destination="825-lu-Tyo" id="SA9-gi-Bhi"/>
+                        <outlet property="outlineButton" destination="DTG-qz-Yps" id="sgQ-ii-aEn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
