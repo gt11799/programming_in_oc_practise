@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 bruce. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AttributeViewController.h"
 
 @interface ViewController ()
 
