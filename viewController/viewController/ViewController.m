@@ -6,7 +6,8 @@
 //  Copyright (c) 2015年 bruce. All rights reserved.
 //
 
-#import "AttributeViewController.h"
+#import "ViewController.h"
+#import "textAnalyzeViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,16 @@
 @end
 
 @implementation ViewController
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"Analyze Text"]) {
+        if ([segue.destinationViewController isKindOfClass:[textAnalyzeViewController class]]) {
+            textAnalyzeViewController *tsvc = (textAnalyzeViewController *)segue.destinationViewController;
+            tsvc.textToAnalyze = self.body.textStorage;
+        }
+    }
+}
 
 
 - (void)viewDidLoad {
