@@ -15,6 +15,7 @@
 		32D600521ACE17EB0028CB0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D600511ACE17EB0028CB0A /* Images.xcassets */; };
 		32D600551ACE17EB0028CB0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D600531ACE17EB0028CB0A /* LaunchScreen.xib */; };
 		32D600611ACE17EB0028CB0A /* dropitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D600601ACE17EB0028CB0A /* dropitTests.m */; };
+		32D6006C1ACF717E0028CB0A /* DropitBehaviour.m in Sources */ = {isa = PBXBuildFile; fileRef = 32D6006B1ACF717E0028CB0A /* DropitBehaviour.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		32D6005A1ACE17EB0028CB0A /* dropitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dropitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D6005F1ACE17EB0028CB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32D600601ACE17EB0028CB0A /* dropitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dropitTests.m; sourceTree = "<group>"; };
+		32D6006A1ACF717E0028CB0A /* DropitBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropitBehaviour.h; sourceTree = "<group>"; };
+		32D6006B1ACF717E0028CB0A /* DropitBehaviour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropitBehaviour.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 			children = (
 				32D6004B1ACE17EB0028CB0A /* ViewController.h */,
 				32D6004C1ACE17EB0028CB0A /* ViewController.m */,
+				32D6006A1ACF717E0028CB0A /* DropitBehaviour.h */,
+				32D6006B1ACF717E0028CB0A /* DropitBehaviour.m */,
 				32D6004E1ACE17EB0028CB0A /* Main.storyboard */,
 				32D600511ACE17EB0028CB0A /* Images.xcassets */,
 				32D600531ACE17EB0028CB0A /* LaunchScreen.xib */,
@@ -225,6 +230,7 @@
 				32D600471ACE17EB0028CB0A /* AppDelegate.m in Sources */,
 				32D600441ACE17EB0028CB0A /* main.m in Sources */,
 				32D6004D1ACE17EB0028CB0A /* ViewController.m in Sources */,
+				32D6006C1ACF717E0028CB0A /* DropitBehaviour.m in Sources */,
 				32D6004A1ACE17EB0028CB0A /* dropit.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

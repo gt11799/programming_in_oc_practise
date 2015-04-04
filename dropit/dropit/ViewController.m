@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "DropitBehaviour.h"
 
-@interface ViewController ()
+@interface ViewController () <UIDynamicAnimatorDelegate>
 @property (strong, nonatomic) IBOutlet UIView *gameView;
 @property (strong, nonatomic) UIDynamicAnimator *animator;
-@property (strong, nonatomic) UIGravityBehavior *gravity;
+@property (strong, nonatomic) DropitBehaviour *dropitBehaviour;
 
 @end
 
@@ -35,7 +36,7 @@ static const CGSize DROP_SIZE = {40, 40};
     dropView.backgroundColor = [self randomColor];
     [self.gameView addSubview:dropView];
     
-    [self.gravity addItem:dropView];
+    [self.dropitBehaviour addItem:dropView];
 }
 
 -(UIColor *)randomColor
@@ -54,18 +55,18 @@ static const CGSize DROP_SIZE = {40, 40};
 {
     if (!_animator) {
         _animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.gameView];
+        _animator.delegate = self;
     }
     return _animator;
 }
 
--(UIGravityBehavior *)gravity
+-(DropitBehaviour *)dropitBehaviour
 {
-    if (!_gravity){
-        _gravity = [[UIGravityBehavior alloc] init];
-        _gravity.magnitude = 0.9;
-        [self.animator addBehavior:_gravity];
+    if (!_dropitBehaviour) {
+        _dropitBehaviour = [[DropitBehaviour alloc] init];
+        [self.animator addBehavior:_dropitBehaviour];
     }
-    return _gravity;
+    return _dropitBehaviour;
 }
 
 - (void)viewDidLoad {
