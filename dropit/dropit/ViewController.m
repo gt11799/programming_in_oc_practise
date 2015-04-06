@@ -69,6 +69,59 @@ static const CGSize DROP_SIZE = {40, 40};
     return _dropitBehaviour;
 }
 
+-(void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator
+{
+    [self removeCompleteRows];
+}
+
+-(BOOL)removeCompleteRows
+{
+    NSMutableArray *dropsToRemove = [[NSMutableArray alloc] init];
+    
+    for (CGFloat y = self.gameView.bounds.size.height-DROP_SIZE.height/2; y>0 ; y -= DROP_SIZE.height)
+    {
+        BOOL rowIsComplete = YES;
+        NSMutableArray *dropsFound = [[NSMutableArray alloc] init];
+        for (CGFloat x = DROP_SIZE.width/2; x <= self.gameView.bounds.size.width-DROP_SIZE.width/2; x += DROP_SIZE.width)
+        {
+            UIView *hitView = [self.gameView hitTest:CGPointMake(x, y) withEvent:NULL];
+            if ([hitView superview] == self.gameView){
+                [dropsFound addObject:hitView];
+            } else {
+                //NSLog(@"will set NO.");
+                rowIsComplete = NO;
+                break;
+            }
+        }
+        //NSLog(@"%i",rowIsComplete);
+        //NSLog(@"drops count, %i", [dropsFound count]);
+        if (![dropsFound count]) break;
+        if (rowIsComplete) [dropsToRemove addObjectsFromArray:dropsFound];
+    }
+    if ([dropsToRemove count]) {
+        for (UIView *drop in dropsToRemove) {
+            [self.dropitBehaviour removeItem:drop];
+        }
+        [self animatorRemovingDrops: dropsToRemove];
+    }
+    return NO;
+}
+
+-(void)animatorRemovingDrops: (NSArray *) dropsToRemove
+{
+    [UIView animateWithDuration:1.0
+         animations:^{
+             for (UIView *drop in dropsToRemove) {
+                 int x = (arc4random()%(int)(self.gameView.bounds.size.width*5)) - (int)self.gameView.bounds.size.width*2;
+                 int y = self.gameView.bounds.size.height;
+                 drop.center = CGPointMake(x, -y);
+             }
+         }
+         completion:^(BOOL fisnished){
+             [dropsToRemove makeObjectsPerformSelector:@selector(removeFromSuperview)];
+         }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
