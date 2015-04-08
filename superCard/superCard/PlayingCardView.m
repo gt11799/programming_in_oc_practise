@@ -72,16 +72,22 @@
     [[UIColor blackColor] setStroke];
     [roundedRect stroke];
     
-    UIImage *faceImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@",[self rankAsString], self.suit]];
-    if (faceImage) {
-        CGRect imageRect = CGRectInset(self.bounds,
-                                       self.bounds.size.width * (1.0-self.faceCardScaleFactor),
-                                       self.bounds.size.height * (1.0-self.faceCardScaleFactor));
+    if (self.faceUp) {
+        //UIImage *faceImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@",[self rankAsString], self.suit]];
+        UIImage *faceImage = [UIImage imageNamed:@"cardBack"];
+        if (faceImage) {
+            CGRect imageRect = CGRectInset(self.bounds,
+                                           self.bounds.size.width * (1.0-self.faceCardScaleFactor),
+                                           self.bounds.size.height * (1.0-self.faceCardScaleFactor));
+            [faceImage drawInRect:imageRect];
+        } else {
+            [self drawPips];
+        }
+        
+        [self drawCorners];
     } else {
-        [self drawPips];
+        [[UIImage imageNamed:@"cardBack"] drawInRect:self.bounds];
     }
-    
-    [self drawCorners];
 }
 
 -(void)drawPips
