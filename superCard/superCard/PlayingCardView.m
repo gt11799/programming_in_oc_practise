@@ -83,7 +83,7 @@
     
     if (self.faceUp) {
         //UIImage *faceImage = [UIImage imageNamed:[NSString stringWithFormat:@"%@%@",[self rankAsString], self.suit]];
-        UIImage *faceImage = [UIImage imageNamed:@"cardBack"];
+        UIImage *faceImage = [UIImage imageNamed:@"cat"];
         if (faceImage) {
             CGRect imageRect = CGRectInset(self.bounds,
                                            self.bounds.size.width * (1.0-self.faceCardScaleFactor),
