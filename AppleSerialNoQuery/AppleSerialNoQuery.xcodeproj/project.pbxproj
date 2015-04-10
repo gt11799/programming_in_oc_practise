@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32BC909A1AD6006B00C47CEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BC90991AD6006B00C47CEF /* main.m */; };
+		32BC909D1AD6006B00C47CEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BC909C1AD6006B00C47CEF /* AppDelegate.m */; };
+		32BC90A01AD6006B00C47CEF /* AppleSerialNoQuery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32BC909E1AD6006B00C47CEF /* AppleSerialNoQuery.xcdatamodeld */; };
+		32BC90A31AD6006B00C47CEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BC90A21AD6006B00C47CEF /* ViewController.m */; };
+		32BC90A61AD6006B00C47CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32BC90A41AD6006B00C47CEF /* Main.storyboard */; };
+		32BC90A81AD6006B00C47CEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32BC90A71AD6006B00C47CEF /* Images.xcassets */; };
+		32BC90AB1AD6006B00C47CEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32BC90A91AD6006B00C47CEF /* LaunchScreen.xib */; };
+		32BC90B71AD6006B00C47CEF /* AppleSerialNoQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BC90B61AD6006B00C47CEF /* AppleSerialNoQueryTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32BC90B11AD6006B00C47CEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32BC908C1AD6006B00C47CEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32BC90931AD6006B00C47CEF;
+			remoteInfo = AppleSerialNoQuery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32BC90941AD6006B00C47CEF /* AppleSerialNoQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSerialNoQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BC90981AD6006B00C47CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32BC90991AD6006B00C47CEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32BC909B1AD6006B00C47CEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32BC909C1AD6006B00C47CEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32BC909F1AD6006B00C47CEF /* AppleSerialNoQuery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppleSerialNoQuery.xcdatamodel; sourceTree = "<group>"; };
+		32BC90A11AD6006B00C47CEF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		32BC90A21AD6006B00C47CEF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		32BC90A51AD6006B00C47CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32BC90A71AD6006B00C47CEF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32BC90AA1AD6006B00C47CEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		32BC90B01AD6006B00C47CEF /* AppleSerialNoQueryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleSerialNoQueryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BC90B51AD6006B00C47CEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32BC90B61AD6006B00C47CEF /* AppleSerialNoQueryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleSerialNoQueryTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32BC90911AD6006B00C47CEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32BC90AD1AD6006B00C47CEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32BC908B1AD6006B00C47CEF = {
+			isa = PBXGroup;
+			children = (
+				32BC90961AD6006B00C47CEF /* AppleSerialNoQuery */,
+				32BC90B31AD6006B00C47CEF /* AppleSerialNoQueryTests */,
+				32BC90951AD6006B00C47CEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32BC90951AD6006B00C47CEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32BC90941AD6006B00C47CEF /* AppleSerialNoQuery.app */,
+				32BC90B01AD6006B00C47CEF /* AppleSerialNoQueryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32BC90961AD6006B00C47CEF /* AppleSerialNoQuery */ = {
+			isa = PBXGroup;
+			children = (
+				32BC90A11AD6006B00C47CEF /* ViewController.h */,
+				32BC90A21AD6006B00C47CEF /* ViewController.m */,
+				32BC90A41AD6006B00C47CEF /* Main.storyboard */,
+				32BC90A71AD6006B00C47CEF /* Images.xcassets */,
+				32BC90A91AD6006B00C47CEF /* LaunchScreen.xib */,
+				32BC909E1AD6006B00C47CEF /* AppleSerialNoQuery.xcdatamodeld */,
+				32BC90971AD6006B00C47CEF /* Supporting Files */,
+			);
+			path = AppleSerialNoQuery;
+			sourceTree = "<group>";
+		};
+		32BC90971AD6006B00C47CEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32BC909B1AD6006B00C47CEF /* AppDelegate.h */,
+				32BC909C1AD6006B00C47CEF /* AppDelegate.m */,
+				32BC90981AD6006B00C47CEF /* Info.plist */,
+				32BC90991AD6006B00C47CEF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32BC90B31AD6006B00C47CEF /* AppleSerialNoQueryTests */ = {
+			isa = PBXGroup;
+			children = (
+				32BC90B61AD6006B00C47CEF /* AppleSerialNoQueryTests.m */,
+				32BC90B41AD6006B00C47CEF /* Supporting Files */,
+			);
+			path = AppleSerialNoQueryTests;
+			sourceTree = "<group>";
+		};
+		32BC90B41AD6006B00C47CEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32BC90B51AD6006B00C47CEF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32BC90931AD6006B00C47CEF /* AppleSerialNoQuery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32BC90BA1AD6006B00C47CEF /* Build configuration list for PBXNativeTarget "AppleSerialNoQuery" */;
+			buildPhases = (
+				32BC90901AD6006B00C47CEF /* Sources */,
+				32BC90911AD6006B00C47CEF /* Frameworks */,
+				32BC90921AD6006B00C47CEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppleSerialNoQuery;
+			productName = AppleSerialNoQuery;
+			productReference = 32BC90941AD6006B00C47CEF /* AppleSerialNoQuery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32BC90AF1AD6006B00C47CEF /* AppleSerialNoQueryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32BC90BD1AD6006B00C47CEF /* Build configuration list for PBXNativeTarget "AppleSerialNoQueryTests" */;
+			buildPhases = (
+				32BC90AC1AD6006B00C47CEF /* Sources */,
+				32BC90AD1AD6006B00C47CEF /* Frameworks */,
+				32BC90AE1AD6006B00C47CEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32BC90B21AD6006B00C47CEF /* PBXTargetDependency */,
+			);
+			name = AppleSerialNoQueryTests;
+			productName = AppleSerialNoQueryTests;
+			productReference = 32BC90B01AD6006B00C47CEF /* AppleSerialNoQueryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32BC908C1AD6006B00C47CEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = bruce;
+				TargetAttributes = {
+					32BC90931AD6006B00C47CEF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					32BC90AF1AD6006B00C47CEF = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 32BC90931AD6006B00C47CEF;
+					};
+				};
+			};
+			buildConfigurationList = 32BC908F1AD6006B00C47CEF /* Build configuration list for PBXProject "AppleSerialNoQuery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32BC908B1AD6006B00C47CEF;
+			productRefGroup = 32BC90951AD6006B00C47CEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32BC90931AD6006B00C47CEF /* AppleSerialNoQuery */,
+				32BC90AF1AD6006B00C47CEF /* AppleSerialNoQueryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32BC90921AD6006B00C47CEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32BC90A61AD6006B00C47CEF /* Main.storyboard in Resources */,
+				32BC90AB1AD6006B00C47CEF /* LaunchScreen.xib in Resources */,
+				32BC90A81AD6006B00C47CEF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32BC90AE1AD6006B00C47CEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32BC90901AD6006B00C47CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32BC90A01AD6006B00C47CEF /* AppleSerialNoQuery.xcdatamodeld in Sources */,
+				32BC909D1AD6006B00C47CEF /* AppDelegate.m in Sources */,
+				32BC90A31AD6006B00C47CEF /* ViewController.m in Sources */,
+				32BC909A1AD6006B00C47CEF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32BC90AC1AD6006B00C47CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32BC90B71AD6006B00C47CEF /* AppleSerialNoQueryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32BC90B21AD6006B00C47CEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32BC90931AD6006B00C47CEF /* AppleSerialNoQuery */;
+			targetProxy = 32BC90B11AD6006B00C47CEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32BC90A41AD6006B00C47CEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32BC90A51AD6006B00C47CEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32BC90A91AD6006B00C47CEF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32BC90AA1AD6006B00C47CEF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32BC90B81AD6006B00C47CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32BC90B91AD6006B00C47CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32BC90BB1AD6006B00C47CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AppleSerialNoQuery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32BC90BC1AD6006B00C47CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AppleSerialNoQuery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32BC90BE1AD6006B00C47CEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AppleSerialNoQueryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppleSerialNoQuery.app/AppleSerialNoQuery";
+			};
+			name = Debug;
+		};
+		32BC90BF1AD6006B00C47CEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AppleSerialNoQueryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppleSerialNoQuery.app/AppleSerialNoQuery";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32BC908F1AD6006B00C47CEF /* Build configuration list for PBXProject "AppleSerialNoQuery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32BC90B81AD6006B00C47CEF /* Debug */,
+				32BC90B91AD6006B00C47CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32BC90BA1AD6006B00C47CEF /* Build configuration list for PBXNativeTarget "AppleSerialNoQuery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32BC90BB1AD6006B00C47CEF /* Debug */,
+				32BC90BC1AD6006B00C47CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		32BC90BD1AD6006B00C47CEF /* Build configuration list for PBXNativeTarget "AppleSerialNoQueryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32BC90BE1AD6006B00C47CEF /* Debug */,
+				32BC90BF1AD6006B00C47CEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		32BC909E1AD6006B00C47CEF /* AppleSerialNoQuery.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				32BC909F1AD6006B00C47CEF /* AppleSerialNoQuery.xcdatamodel */,
+			);
+			currentVersion = 32BC909F1AD6006B00C47CEF /* AppleSerialNoQuery.xcdatamodel */;
+			path = AppleSerialNoQuery.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 32BC908C1AD6006B00C47CEF /* Project object */;
+}
