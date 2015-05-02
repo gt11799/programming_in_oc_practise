@@ -24,6 +24,9 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (IBAction)createStory:(id)sender {
+    self.theStory.text = [self.theTemplate.text stringByReplacingOccurrencesOfString:@"<place>" withString:self.thePlace.text];
+    self.theStory.text = [self.theStory.text stringByReplacingOccurrencesOfString:@"<verb>" withString:self.theVerb.text];
+    self.theStory.text = [self.theStory.text stringByReplacingOccurrencesOfString:@"<number>" withString:self.theNumber.text];
 }
 - (IBAction)hideKeyboard:(id)sender
 {
