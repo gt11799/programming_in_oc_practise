@@ -1,19 +1,19 @@
 //
-//  AppleSerialNoQueryTests.m
-//  AppleSerialNoQueryTests
+//  fieldButtonFunTests.m
+//  fieldButtonFunTests
 //
-//  Created by bruce on 15/4/9.
+//  Created by bruce on 15/5/2.
 //  Copyright (c) 2015年 bruce. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface AppleSerialNoQueryTests : XCTestCase
+@interface fieldButtonFunTests : XCTestCase
 
 @end
 
-@implementation AppleSerialNoQueryTests
+@implementation fieldButtonFunTests
 
 - (void)setUp {
     [super setUp];

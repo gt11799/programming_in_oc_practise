@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  AppleSerialNoQuery
+//  tableViewPractise
 //
-//  Created by bruce on 15/4/9.
+//  Created by bruce on 15/4/12.
 //  Copyright (c) 2015年 bruce. All rights reserved.
 //
 
