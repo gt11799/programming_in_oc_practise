@@ -58,10 +58,13 @@
 
     [self.toggleButton setTitle:@"Set Still!" forState:UIControlStateNormal];
     
-    hopRateString = [NSString stringWithFormat:@"1.2f hps",1/(2-self.speedSlider.value)];
+    hopRateString = [NSString stringWithFormat:@"%1.2f hps",1/(2-self.speedSlider.value)];
     self.hopsPerSecond.text = hopRateString;
 }
-- (IBAction)setIncrement:(id)sender {
+- (IBAction)setIncrement:(id)sender
+{
+    self.speedSlider.value = self.speedStepper.value;
+    [self setSpeed:nil];
 }
 
 - (void)viewDidLoad {
