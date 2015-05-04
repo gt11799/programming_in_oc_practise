@@ -15,6 +15,7 @@
 		32F526651AF6249D003E3D76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F526641AF6249D003E3D76 /* Images.xcassets */; };
 		32F526681AF6249D003E3D76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32F526661AF6249D003E3D76 /* LaunchScreen.xib */; };
 		32F526741AF6249D003E3D76 /* FlowerWebTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F526731AF6249D003E3D76 /* FlowerWebTests.m */; };
+		32F5267F1AF83DD4003E3D76 /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F5267E1AF83DD4003E3D76 /* JCRBlurView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		32F5266D1AF6249D003E3D76 /* FlowerWebTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerWebTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32F526721AF6249D003E3D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32F526731AF6249D003E3D76 /* FlowerWebTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerWebTests.m; sourceTree = "<group>"; };
+		32F5267D1AF83DD4003E3D76 /* JCRBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRBlurView.h; sourceTree = "<group>"; };
+		32F5267E1AF83DD4003E3D76 /* JCRBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRBlurView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 		32F526541AF6249D003E3D76 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				32F5267D1AF83DD4003E3D76 /* JCRBlurView.h */,
+				32F5267E1AF83DD4003E3D76 /* JCRBlurView.m */,
 				32F526581AF6249D003E3D76 /* AppDelegate.h */,
 				32F526591AF6249D003E3D76 /* AppDelegate.m */,
 				32F526551AF6249D003E3D76 /* Info.plist */,
@@ -226,6 +231,7 @@
 				32F5265D1AF6249D003E3D76 /* FlowerWeb.xcdatamodeld in Sources */,
 				32F526601AF6249D003E3D76 /* ViewController.m in Sources */,
 				32F526571AF6249D003E3D76 /* main.m in Sources */,
+				32F5267F1AF83DD4003E3D76 /* JCRBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

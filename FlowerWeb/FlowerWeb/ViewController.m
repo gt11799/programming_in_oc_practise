@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIWebView *flowerDetailView;
 @property (weak, nonatomic) IBOutlet UIButton *getFlower;
 @property (weak, nonatomic) IBOutlet UISwitch *toggleFlowerDetail;
+@property (strong, nonatomic) JCRBlurView *blurView;
 
 @end
 
@@ -23,12 +24,16 @@
     [super viewDidLoad];
     self.flowerDetailView.hidden = YES;
     [self getFlower:nil];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.blurView = [JCRBlurView new];
+    [self.blurView setFrame:self.flowerDetailView.frame];
+    [self.view insertSubview:self.blurView belowSubview:self.flowerDetailView];
+    self.blurView.hidden = YES;
 }
 
 - (IBAction)toggleFlowerDetail:(id)sender
 {
     self.flowerDetailView.hidden = ![sender isOn];
+    self.blurView.hidden = ![sender isOn];
 }
 
 - (IBAction)getFlower:(id)sender

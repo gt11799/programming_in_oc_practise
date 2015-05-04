@@ -33,14 +33,14 @@
                                 <segments>
                                     <segment title="Red"/>
                                     <segment title="Blue"/>
-                                    <segment title="Yello"/>
+                                    <segment title="Yellow"/>
                                     <segment title="Green"/>
                                 </segments>
                                 <connections>
                                     <action selector="getFlower:" destination="vXZ-lx-hvc" eventType="valueChanged" id="2Ye-hY-YwX"/>
                                 </connections>
                             </segmentedControl>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MqJ-mp-kuD">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MqJ-mp-kuD">
                                 <rect key="frame" x="236" y="117" width="51" height="31"/>
                                 <connections>
                                     <action selector="toggleFlowerDetail:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Ky2-53-x0C"/>
@@ -50,7 +50,7 @@
                                 <rect key="frame" x="0.0" y="212" width="333" height="356"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <webView alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdp-4M-ZQ0">
+                            <webView opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdp-4M-ZQ0">
                                 <rect key="frame" x="0.0" y="485" width="326" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
