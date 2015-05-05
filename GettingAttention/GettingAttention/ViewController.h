@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@import AudioToolbox;
 
-@interface ViewController : UIViewController <UIAlertViewDelegate>
+@interface ViewController : UIViewController <UIAlertViewDelegate, UIActionSheetDelegate>
 
 
 @end

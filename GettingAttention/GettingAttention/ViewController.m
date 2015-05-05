@@ -46,7 +46,7 @@
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    NSLog(@"run the delegate");
+    //for multi button
     NSString *buttonTitle = [alertView buttonTitleAtIndex:buttonIndex];
     if ([buttonTitle isEqualToString:@"Maybe Later"]) {
         self.userOutput.text = @"Clicked 'Maybe Later'";
@@ -54,6 +54,11 @@
         self.userOutput.text = @"Clicked 'Never'";
     } else {
         self.userOutput.text = @"Clicked 'OK'";
+    }
+    
+    //for input
+    if ([alertView.title isEqualToString:@"Email Address"]) {
+        self.userOutput.text = [[alertView textFieldAtIndex:0] text];
     }
 }
 
@@ -70,8 +75,36 @@
     [alertDialog show];
 }
 
-- (IBAction)doActionSheet:(id)sender {
+#pragma mark - implement alert dialog
+
+- (IBAction)doActionSheet:(id)sender
+{
+    UIActionSheet *actionSheet;
+    actionSheet = [[UIActionSheet alloc]
+                   initWithTitle:@"Available Actions"
+                   delegate:self
+                   cancelButtonTitle:@"Cancel"
+                   destructiveButtonTitle:@"Destroy"
+                   otherButtonTitles:@"Negotiate",@"Compromise", nil];
+    actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
+    [actionSheet showFromRect:[(UIButton *)sender frame] inView:self.view animated:YES];
 }
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *buttonTitle = [actionSheet buttonTitleAtIndex:buttonIndex];
+    if ([buttonTitle isEqualToString:@"Destroy"]) {
+        self.userOutput.text = @"Click 'Destroy'";
+    } else if ([buttonTitle isEqualToString:@"Negotiate"]) {
+        self.userOutput.text = @"Click 'Negotiate'";
+    } else if ([buttonTitle isEqualToString:@"Compromise"]) {
+        self.userOutput.text = @"Click 'Compromise'";
+    } else {
+        self.userOutput.text = @"Click 'Cancel'";
+    }
+}
+
+#pragma mark - implement action sheet
 
 - (IBAction)doSound:(id)sender {
 }
