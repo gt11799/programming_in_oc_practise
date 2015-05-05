@@ -126,7 +126,11 @@
     AudioServicesPlayAlertSound(soundID);
 }
 
-- (IBAction)doVibration:(id)sender {
+#pragma mark - alert with wav
+
+- (IBAction)doVibration:(id)sender
+{
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
 
