@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *userOutput;
+@property (weak, nonatomic) IBOutlet UILabel *userOutput;
 
 @end
 
@@ -32,10 +32,42 @@
     [alertDialog show];
 }
 
-- (IBAction)doMultiButtonAlert:(id)sender {
+- (IBAction)doMultiButtonAlert:(id)sender
+{
+    UIAlertView *alertDialog;
+    alertDialog = [[UIAlertView alloc]
+                   initWithTitle:@"Alert Button Selected"
+                   message:@"I need your attention NOW"
+                   delegate:self
+                   cancelButtonTitle:@"OK"
+                   otherButtonTitles:@"Maybe Later", @"Never", nil];
+    [alertDialog show];
 }
 
-- (IBAction)doAlertInput:(id)sender {
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"run the delegate");
+    NSString *buttonTitle = [alertView buttonTitleAtIndex:buttonIndex];
+    if ([buttonTitle isEqualToString:@"Maybe Later"]) {
+        self.userOutput.text = @"Clicked 'Maybe Later'";
+    } else if ([buttonTitle isEqualToString:@"Never"]) {
+        self.userOutput.text = @"Clicked 'Never'";
+    } else {
+        self.userOutput.text = @"Clicked 'OK'";
+    }
+}
+
+- (IBAction)doAlertInput:(id)sender
+{
+    UIAlertView *alertDialog;
+    alertDialog = [[UIAlertView alloc]
+                   initWithTitle:@"Email Address"
+                   message:@"Please enter your email address"
+                   delegate:self
+                   cancelButtonTitle:@"OK"
+                   otherButtonTitles: nil];
+    alertDialog.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alertDialog show];
 }
 
 - (IBAction)doActionSheet:(id)sender {
