@@ -106,10 +106,24 @@
 
 #pragma mark - implement action sheet
 
-- (IBAction)doSound:(id)sender {
+- (IBAction)doSound:(id)sender
+{
+    SystemSoundID soundID;
+    NSString *soundFile = [[NSBundle mainBundle] pathForResource:@"soundeffect" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)
+                                     [NSURL fileURLWithPath:soundFile]
+                                     , &soundID);
+    AudioServicesPlaySystemSound(soundID);
 }
 
-- (IBAction)doAlertSound:(id)sender {
+- (IBAction)doAlertSound:(id)sender
+{
+    SystemSoundID soundID;
+    NSString *soundFile = [[NSBundle mainBundle] pathForResource:@"alertsound" ofType:@"wav"];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)
+                                     [NSURL fileURLWithPath:soundFile]
+                                     , &soundID);
+    AudioServicesPlayAlertSound(soundID);
 }
 
 - (IBAction)doVibration:(id)sender {
