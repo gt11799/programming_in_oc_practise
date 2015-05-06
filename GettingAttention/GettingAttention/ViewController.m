@@ -20,6 +20,8 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+#pragma mark - implement alert dialog
+
 - (IBAction)doAlert:(id)sender
 {
     UIAlertView *alertDialog;
@@ -75,7 +77,7 @@
     [alertDialog show];
 }
 
-#pragma mark - implement alert dialog
+#pragma mark - implement action sheet
 
 - (IBAction)doActionSheet:(id)sender
 {
@@ -104,7 +106,7 @@
     }
 }
 
-#pragma mark - implement action sheet
+#pragma mark - alert with wav
 
 - (IBAction)doSound:(id)sender
 {
@@ -126,7 +128,6 @@
     AudioServicesPlayAlertSound(soundID);
 }
 
-#pragma mark - alert with wav
 
 - (IBAction)doVibration:(id)sender
 {
